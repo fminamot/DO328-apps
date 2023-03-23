@@ -18,13 +18,10 @@ spec:
       containers:
         - name: vertx-greet
           image: quay.io/redhattraining/ossm-vertx-greet:1.0
-          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           env:
-            - name: GREETING
-              value: "Hello v3!"
-            - name: MAX_REQUESTS_PER_SECOND
-              value: "1"
-           
-
+          - name: GREETING
+            value: "Hello v3!"
+          - name: MAX_REQUESTS_PER_SECOND
+            value: "1"
